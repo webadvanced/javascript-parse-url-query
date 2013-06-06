@@ -1,7 +1,7 @@
-JavaScript utility to parse URL query string
-============================================
+JavaScript utility for parsing URL query strings
+================================================
 
-Creates a hash and utility methods to access url query values
+Creates a hash and utility methods for accessing URL query string values
 
 ##API
 
