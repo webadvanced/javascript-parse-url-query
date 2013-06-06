@@ -9,6 +9,7 @@
 
 	//If there is no query, exit
 	if( !q ) {
+		w.urlq = urlq;
 		return;
 	}
 
@@ -34,4 +35,4 @@
 	//give it to the people
 	w.urlq = urlq;
 
-}( window, window.location.query ) );
+}( window, window.location.search ) );
