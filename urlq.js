@@ -21,12 +21,13 @@
 
 	q = decodeURIComponent( q );
 
-	//build quiry object
+	//build query object
 	qCollection = q.slice( 1 ).split( '&' );
 	for( ; i < qCollection.length; i ++ ) {
 		var entry = qCollection[ i ].split( '=' );
 		qObject[ entry[ 0 ] ] = entry[ 1 ];
 	}
+	
 	//count of query params
 	urlq.count = qCollection.length;
 
