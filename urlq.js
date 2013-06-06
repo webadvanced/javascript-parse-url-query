@@ -1,4 +1,4 @@
-( function( w, q, undefined ) {
+;( function( w, q, undefined ) {
 	
 	"use strict";
 	
@@ -15,7 +15,7 @@
 
 	//build quiry object
 	qCollection = q.slice( 1 ).split( '&' );
-	for( ; i < qCollection; i ++ ) {
+	for( ; i < qCollection.length; i ++ ) {
 		var entry = qCollection[ i ].split( '=' );
 		qObject[ entry[ 0 ] ] = entry[ 1 ];
 	}

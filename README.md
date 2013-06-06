@@ -7,7 +7,7 @@ Creates a hash and utility methods to access url query values
 
 Example url: `http://www.google.com?q=kittens`
 
-**urlq.get( paramName )** returns the value for the given param name.
+**urlq.get( paramName )** returns the value for the given param name (string).
 
     var searchVal = urlq.get( 'q' ); //Returns 'kittens'
     var searchFilter = urlq.get( 'z' ); //Returns undefined
