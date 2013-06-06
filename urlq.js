@@ -5,13 +5,21 @@
 	var	qObject = {},
 		qCollection,
 		i = 0,
-		urlq = {};
+		urlq = {
+			count: 0,
+			get: function() {},
+			exists: function() {}
+		};
 
+	//give it to the people
+	w.urlq = urlq;
+	
 	//If there is no query, exit
 	if( !q ) {
-		w.urlq = urlq;
 		return;
 	}
+
+	q = decodeURIComponent( q );
 
 	//build quiry object
 	qCollection = q.slice( 1 ).split( '&' );
@@ -31,8 +39,5 @@
 	urlq.exists = function( key ) {
 		return qObject[ key ] !== undefined;
 	};
-
-	//give it to the people
-	w.urlq = urlq;
 
 }( window, window.location.search ) );
