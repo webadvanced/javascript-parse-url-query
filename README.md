@@ -1,5 +1,5 @@
-JavaScript utility for parsing URL query strings
-================================================
+###JavaScript utility for parsing URL query strings
+
 
 Creates a hash and utility methods for accessing URL query string values
 
@@ -14,8 +14,8 @@ Example url: `http://www.google.com?q=kittens`
 
 **urlq.exists( paramName )** returns bool for provided param name.
 
-    var hasSearch = urlq.get( 'q' ); //Returns true
-    var hasFilter = urlq.get( 'z' ); //Returns false
+    var hasSearch = urlq.exists( 'q' ); //Returns true
+    var hasFilter = urlq.exists( 'z' ); //Returns false
 
 **urlq.count** returns count of paramaters.
 
